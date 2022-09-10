@@ -63,6 +63,9 @@ function Ls({command, arg}) {
         </div>
      </div>      
         )
+
+    default:
+      break
   }
 }
 

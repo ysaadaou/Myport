@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from '../Head'
 
-function Skills({arg, command,hist}) {
+function Skills({arg, command}) {
   return (
     <>
     <Head arg={arg} /> 

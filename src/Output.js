@@ -15,7 +15,6 @@ function Output({ command, arg, hist}) {
           <Ls command={command} arg={arg}/>
         </>
       )
-        break
       case "cd":
 
         return(
@@ -28,7 +27,6 @@ function Output({ command, arg, hist}) {
         break
       case "clear":
         return (<Head arg={arg} />)
-        break
       
       case "cat":
         console.log("cat")

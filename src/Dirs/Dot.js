@@ -1,6 +1,6 @@
 import React from 'react'
 import Head from '../Head'
-function Dot({arg, hist, command}) {
+function Dot({arg, command}) {
   return (
    <> 
     <Head arg={arg} /> 

@@ -1,6 +1,6 @@
 import React from 'react'
 import Head from '../Head'
-function Contact({arg, command,hist}) {
+function Contact({arg, command}) {
   return (
     <div>
         <Head arg={arg} /> 

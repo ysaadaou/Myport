@@ -1,5 +1,4 @@
 import React from 'react'
-import Line from './Components/Line'
 import Output from './Output'
 function Body({hist, command, arg}) {
     

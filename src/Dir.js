@@ -9,25 +9,27 @@ function Dir({arg, command, hist}) {
             case "Skills":
             return (
                 <>
-                    <Skills  arg={arg} command={command} hist={hist}/>
+                    <Skills  arg={arg} command={command}/>
                 </>
             )
             case "..":
                 return (
                     <>
-                        <Dot arg={arg} command={command} hist={hist}/>
+                        <Dot arg={arg} command={command}/>
                     </>
                 )
             case "Contact":
                 return (
                     <>
-                        <Contact arg={arg} command={command} hist={hist} />
+                        <Contact arg={arg} command={command}/>
                     </>
                 )
             case "Languages":
                 return (
-                    <Languages arg={arg} command={command} hist={hist} />
+                    <Languages arg={arg} command={command} />
                 )
+            default:
+                break
         }
 }
 

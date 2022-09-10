@@ -1,6 +1,6 @@
 import React from 'react'
 import Head from '../Head'
-function Languages({arg, command,hist}) {
+function Languages({arg, command}) {
   return (
     <div>
       
