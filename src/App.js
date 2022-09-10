@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Body from "./Body";
-import Line from "./Components/Line";
 import Liiine from "./Liiine";
 import Output from "./Output";
 
@@ -36,6 +35,8 @@ const handleClear = () => {
           break
         case "cd Languages":
           setArg("Languages")
+          break
+        default:
           break
       }
       const term = hist
