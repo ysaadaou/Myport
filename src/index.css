@@ -1,0 +1,65 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.dol{
+  gap: 1;
+  align-self: center;
+  font-family: 'Noto Sans Buhid', sans-serif;
+}
+.l{
+  display: flex;
+}
+img {
+  width: 150px;
+  height: 133px;
+  border-radius: 50%;
+}
+
+.error {
+  color: red
+}
+  body{
+  background-color: black;
+  color: white;
+  font-size: 2rem;
+}
+
+input {
+  background-color: black;
+  color: white;
+  font-size: 2rem;
+  width: 100%;
+  outline: none;
+  border: 0;
+  caret-color: green;
+  font-family: inherit;
+}
+
+.whoami {
+  display: flex;
+  gap: 2rem;
+} 
+
+.desc{
+  font-size: 1.5rem;
+  width: 75%;
+  align-self: center;
+  font-family: monospace;
+  text-shadow:
+      0 0 20px #0fa,
+      0 0 40px #0fa,
+      0 0 70px #0fa,
+      0 0 90px #0fa,
+      0 0 100px #0fa;
+}
+
+.home{
+  display: flex;
+}
+
+.home span{
+  align-self: center;
+}
+
