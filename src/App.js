@@ -56,7 +56,7 @@ const handleClear = () => {
         setHist([])
       }
       setCommand('')
-      setCommand(val)
+      setCommand(val.trimEnd())
       setVal('')
 
     }

@@ -12,6 +12,18 @@
   display: flex;
 }
 
+a{
+  text-decoration: none;
+  align-self: center;
+  color: white;
+  margin-left: 0.5rem;
+}
+.output{
+  font-size: 1.9rem;
+}
+a:hover{
+  color: greenyellow;
+}
 li{
   border-style: none;
 }
@@ -26,8 +38,8 @@ li{
 
 
 img {
-  width: 150px;
-  height: 133px;
+  width: 10rem;
+  height: 10rem;
   border-radius: 50%;
 }
 
@@ -78,6 +90,8 @@ input {
   align-self: center;
   margin-left: 0.5rem;
 }
+
+
 
 
 

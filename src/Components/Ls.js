@@ -1,6 +1,6 @@
 import React from 'react'
 import {FaMobileAlt,FaTerminal,FaFlask } from "react-icons/fa";
-import {FaGraduationCap, FaCommentDots, FaLanguage} from "react-icons/fa"
+import {FaGraduationCap,FaRegEnvelope, FaCommentDots, FaLanguage} from "react-icons/fa"
 import { FaHtml5 ,FaJsSquare, FaCss3Alt, FaLinux, FaReact, FaPython, FaPhp } from "react-icons/fa";
 function Ls({command, arg}) {
   switch (arg) {
@@ -42,10 +42,10 @@ function Ls({command, arg}) {
         <div className='command'><span className='dol'>$</span> {command}</div>
         <div className='output'>
           <ul>
-            <li>
-            <a href = "mailto: ysaadaou@gmail.com">ysaadaou@gmail</a>
+            <li className='home'>
+            <FaRegEnvelope style={{color: "red"}} /><a href = "mailto: ysaadaou@gmail.com">ysaadaou@gmail</a>
             </li>
-            <li><FaMobileAlt/>0624164940</li>
+            <li className='home'><FaMobileAlt style={{color:"darkorchid"}}/><span>0624164940</span></li>
           </ul>
         </div>
      </div>)
