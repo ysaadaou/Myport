@@ -4,9 +4,10 @@ import Ls from './Components/Ls'
 import Whoami from './Components/Whoami'
 import Head from './Head'
 import Dir from './Dir'
+import Pwd from './Components/Pwd'
 
 function Output({ command, arg, hist}) {
-    switch (command.split(' ')[0]){
+    switch ((command.split(' ')[0]).toLowerCase()){
       case "ls":
        return (
 
@@ -23,8 +24,12 @@ function Output({ command, arg, hist}) {
           </>
         )
       case "pwd":
-        console.log("pwd")
-        break
+        return (
+          <>
+            <Head arg={arg} />
+            <Pwd arg={arg} command={command}/>
+          </>
+        )
       case "clear":
         return (<Head arg={arg} />)
       

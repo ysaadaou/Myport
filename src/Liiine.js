@@ -6,6 +6,8 @@ function Liiine({arg,handleSubmit, val , handleChange,command}) {
             return <Line arg="Skills" handleSubmit={handleSubmit} val={val} handleChange={handleChange} command={command} />
         case "cd ..":
             return <Line arg="~" handleSubmit={handleSubmit} val={val} handleChange={handleChange} command={command} />
+        case "cd":
+            return <Line arg="~" handleSubmit={handleSubmit} val={val} handleChange={handleChange} command={command} />
         case "cd Contact":
             return <Line arg="Contact" handleSubmit={handleSubmit} val={val} handleChange={handleChange} command={command} />
         case "cd Languages":

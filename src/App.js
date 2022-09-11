@@ -30,6 +30,9 @@ const handleClear = () => {
         case "cd ..":
           setArg("~")
           break
+        case "cd":
+          setArg("~")
+          break
         case "cd Contact":
           setArg("Contact")
           break

@@ -3,7 +3,7 @@ import Dot from './Dirs/Dot'
 import Languages from './Dirs/Languages'
 import Skills from './Dirs/Skills'
 
-function Dir({arg, command, hist}) {
+function Dir({arg, command}) {
 
  switch (command.split(' ')[1]) {
             case "Skills":
@@ -27,6 +27,12 @@ function Dir({arg, command, hist}) {
             case "Languages":
                 return (
                     <Languages arg={arg} command={command} />
+                )
+            case undefined:
+                return (
+                    <>
+                        <Dot arg={arg} command={command}/>
+                    </>
                 )
             default:
                 break

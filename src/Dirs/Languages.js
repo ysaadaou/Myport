@@ -5,7 +5,7 @@ function Languages({arg, command}) {
     <div>
       
         <Head arg={arg} /> 
-        <div className='command'><span className='dol'>$</span> {command}</div>
+        <div className='command'><span className='dol'>$</span> <span className='cmd'>{command}</span></div>
     </div>
   )
 }

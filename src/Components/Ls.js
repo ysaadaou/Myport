@@ -1,5 +1,5 @@
 import React from 'react'
-import {FaPhoneAlt } from "react-icons/fa";
+import {FaMobileAlt,FaTerminal,FaFlask } from "react-icons/fa";
 import {FaGraduationCap, FaCommentDots, FaLanguage} from "react-icons/fa"
 import { FaHtml5 ,FaJsSquare, FaCss3Alt, FaLinux, FaReact, FaPython, FaPhp } from "react-icons/fa";
 function Ls({command, arg}) {
@@ -10,11 +10,11 @@ function Ls({command, arg}) {
         <div className='command'><span className='dol'>$</span> {command}</div>
         <div className='output'>
           <ul>
-            <li>Skills</li>
-            <li>Projects</li>
-            <li className='home'><FaCommentDots/><span>Contact</span></li>
-            <li className='home'><FaGraduationCap/><span>Studies</span></li>
-            <li className='home'><FaLanguage/><span>Languages</span></li>
+            <li className='home'><FaTerminal style={{color: "magenta"}}/><span >Skills</span></li>
+            <li className='home'><FaFlask style={{color:"red"}}/><span>Projects</span></li>
+            <li className='home'><FaCommentDots style={{color: "#00FF00"}}/><span>Contact</span></li>
+            <li className='home'><FaGraduationCap style={{color: "yellow"}}/><span>Studies</span></li>
+            <li className='home'><FaLanguage style={{color:"cyan"}}/><span>Languages</span></li>
           </ul>
         </div>
      </div>
@@ -25,14 +25,14 @@ function Ls({command, arg}) {
         <div className='command'><span className='dol'>$</span> {command}</div>
         <div className='output'>
           <ul>
-            <li><FaReact style={{color: '#61DBFB'}} />React</li>
-            <li><FaJsSquare style={{color: 'yellow'}}/>Js</li>
-            <li><FaPython style={{color: 'cyan'}}/>Python</li>
-            <li><FaHtml5 style={{color: '#e34c26'}} />Html</li>
-            <li><FaCss3Alt style={{color: '#264de4'}}/>Css</li>
-            <li><FaLinux style={{color: 'yellow'}} />Linux</li>
-            <li><FaPhp style={{color: 'pink'}}/>Php</li>
-            <li>C++</li>
+            <li className='home'><FaReact style={{color: '#61DBFB'}} /><span>React</span></li>
+            <li className='home'><FaJsSquare style={{color: 'yellow'}}/> <span>Js</span></li>
+            <li className='home'><FaPython style={{color: 'cyan'}}/> <span>Python</span></li>
+            <li className='home'><FaHtml5 style={{color: '#e34c26'}} /> <span>Html</span></li>
+            <li className='home'><FaCss3Alt style={{color: '#264de4'}}/> <span>Css</span></li>
+            <li className='home'><FaLinux style={{color: 'yellow'}} /> <span>Linux</span></li>
+            <li className='home'><FaPhp style={{color: 'pink'}}/> <span>Php</span></li>
+            <li className='home'> <span>C++</span></li>
           </ul>
         </div>
      </div>)
@@ -45,7 +45,7 @@ function Ls({command, arg}) {
             <li>
             <a href = "mailto: ysaadaou@gmail.com">ysaadaou@gmail</a>
             </li>
-            <li><FaPhoneAlt/>0624164940</li>
+            <li><FaMobileAlt/>0624164940</li>
           </ul>
         </div>
      </div>)

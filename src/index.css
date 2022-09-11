@@ -3,14 +3,15 @@
   padding: 0;
   box-sizing: border-box;
 }
-.dol{
-  gap: 1;
+
+/* .dol{
   align-self: center;
   font-family: 'Noto Sans Buhid', sans-serif;
-}
+}*/
 .l{
   display: flex;
 }
+
 img {
   width: 150px;
   height: 133px;
@@ -35,6 +36,7 @@ input {
   border: 0;
   caret-color: green;
   font-family: inherit;
+  margin-left: 0.4rem;
 }
 
 .whoami {
@@ -61,5 +63,11 @@ input {
 
 .home span{
   align-self: center;
+  margin-left: 0.5rem;
 }
 
+
+
+.output li {
+  padding: 0.4rem;
+}
