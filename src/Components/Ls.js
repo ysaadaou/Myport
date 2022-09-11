@@ -31,7 +31,7 @@ function Ls({command, arg}) {
             <li className='home'><FaHtml5 style={{color: '#e34c26'}} /> <span>Html</span></li>
             <li className='home'><FaCss3Alt style={{color: '#264de4'}}/> <span>Css</span></li>
             <li className='home'><FaLinux style={{color: 'yellow'}} /> <span>Linux</span></li>
-            <li className='home'><FaPhp style={{color: 'pink'}}/> <span>Php</span></li>
+            <li className='home'><FaPhp style={{color: 'magenta'}}/> <span>Php</span></li>
             <li className='home'> <span>C++</span></li>
           </ul>
         </div>

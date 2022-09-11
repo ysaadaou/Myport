@@ -22,8 +22,8 @@ const handleClear = () => {
 }
   const handleSubmit = (e) => {
     if(e.key === "Enter"){
-      switch (command) {
-        case "cd Skills":
+      switch (command.toLowerCase()) {
+        case "cd skills":
            setArg("Skills")
 
           break
@@ -33,11 +33,14 @@ const handleClear = () => {
         case "cd":
           setArg("~")
           break
-        case "cd Contact":
+        case "cd contact":
           setArg("Contact")
           break
-        case "cd Languages":
+        case "cd languages":
           setArg("Languages")
+          break
+        case "cd projects":
+          setArg("Projects")
           break
         default:
           break

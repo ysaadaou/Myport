@@ -1,12 +1,13 @@
 import Contact from './Dirs/Contact'
 import Dot from './Dirs/Dot'
 import Languages from './Dirs/Languages'
+import Projects from './Dirs/Projects'
 import Skills from './Dirs/Skills'
 
 function Dir({arg, command}) {
 
- switch (command.split(' ')[1]) {
-            case "Skills":
+ switch (command.split(' ')[1] !== undefined ? command.split(' ')[1].toLowerCase() : command.split(' ')[1]) {
+            case "skills":
             return (
                 <>
                     <Skills  arg={arg} command={command}/>
@@ -18,13 +19,13 @@ function Dir({arg, command}) {
                         <Dot arg={arg} command={command}/>
                     </>
                 )
-            case "Contact":
+            case "contact":
                 return (
                     <>
                         <Contact arg={arg} command={command}/>
                     </>
                 )
-            case "Languages":
+            case "languages":
                 return (
                     <Languages arg={arg} command={command} />
                 )
@@ -32,6 +33,12 @@ function Dir({arg, command}) {
                 return (
                     <>
                         <Dot arg={arg} command={command}/>
+                    </>
+                )
+            case "projects":
+                return (
+                    <>
+                        <Projects arg={arg} command={command} />
                     </>
                 )
             default:

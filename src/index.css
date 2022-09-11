@@ -12,6 +12,19 @@
   display: flex;
 }
 
+li{
+  border-style: none;
+}
+
+.dol {
+  align-self: center;
+}
+
+.l input {
+  margin-left: 0.5rem;
+}
+
+
 img {
   width: 150px;
   height: 133px;

@@ -5,6 +5,7 @@ import Whoami from './Components/Whoami'
 import Head from './Head'
 import Dir from './Dir'
 import Pwd from './Components/Pwd'
+import Help from './Components/Help'
 
 function Output({ command, arg, hist}) {
     switch ((command.split(' ')[0]).toLowerCase()){
@@ -39,11 +40,17 @@ function Output({ command, arg, hist}) {
       case "whoami":
         return (
           <>
-        <Head  arg={arg}/>
-        <Whoami command={command} />
-        </>
+            <Head  arg={arg}/>
+            <Whoami command={command} />
+          </>
         )
-
+      case "help":
+        return (
+          <>
+            <Head arg={arg}/>
+            <Help command={command} arg={arg} />
+          </>
+        )
       case "":
         break
       
@@ -53,7 +60,7 @@ function Output({ command, arg, hist}) {
    default:
       return (
         <>
-          <Head />
+          <Head arg={arg}/>
           <CommandNotFound command={command}/>
         </>)
 
